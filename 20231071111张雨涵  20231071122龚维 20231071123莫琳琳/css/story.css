@@ -1,0 +1,240 @@
+/* 全局样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+.top{
+	text-align: center;
+	color:black;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+/* 导航栏容器 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+/* 网站logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 50px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 导航列表 */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* 导航图标 */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-icons a:hover {
+    color: #FFD700;
+}
+
+/* 故事展示区样式 */
+.story-container {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 15px;
+    padding: 15px;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.story {
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.story video {
+    max-width: 100%;
+    max-height: 100%;
+    box-align:center;
+}
+.story img {
+    width:480px;
+    height:270px;
+    box-align:center;
+}
+
+
+#image {
+            cursor: pointer;
+        }
+#image2{
+            cursor: pointer;
+        }
+#image3{
+            cursor: pointer;
+        }
+.text {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            transition: all 0.5s ease; 
+			color: black;
+        }
+.story-content {
+    padding: 20px;
+}
+
+.story-content h3 {
+    margin-bottom: 10px;
+}
+
+.story-content p {
+    margin-bottom: 15px;
+}
+
+.story-content span {
+    color: #999;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: black;
+}
+.social-icons a:hover {
+    color: #FFD700;
+}
+p {
+    margin: 0;
+}
+
+section{
+    justify-content:space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px; /* 根据实际需求调整 */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease; /* 图片透明度过渡效果 */
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* 初始透明度为0 */
+    transition: opacity 0.5s ease; /* 视频透明度过渡效果 */
+}
+
+.banner:hover video {
+    opacity: 1; /* 鼠标悬停时视频显示 */
+}
+
+.banner:hover img {
+    opacity: 0; /* 鼠标悬停时图片隐藏 */
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+}
+audio::-webkit-media-controls-timeline {
+    margin: 0 auto;
+}
